@@ -1,0 +1,34 @@
+---
+title: "Our Assignment"
+runtime: shiny
+output: html_document
+---
+
+```{r, echo=FALSE}
+library(shiny)
+shinyUI(fluidPage(
+
+  # Application title
+  titlePanel("World Cup Data"),
+
+  # Sidebar with a slider input for number of bins
+  sidebarLayout(
+    sidebarPanel("Distribution of Players per League"),
+    sliderInput("bins",
+                "Number of bins:",
+                min = 1,
+                max = 50,
+                value = 30)
+  ),
+    # Show a plot of the generated distribution
+    mainPanel(
+      tabsetPanel(
+        tabPanel("Plot", plotOutput("distPlot")),
+        tabPanel("AnotherPlot"),
+        tabPanel("Bootstrap"),
+        tabPanel("About")
+      )
+    )
+  )
+)
+```
