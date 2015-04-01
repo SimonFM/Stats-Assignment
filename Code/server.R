@@ -34,4 +34,11 @@ shinyServer(function(input, output) {
     dataframe <- data.frame(goalsPerGame,caps)
     ggplot(dataframe, aes(goalsPerGame,caps),colour=cond)+geom_point(shape=1)+geom_smooth(method=lm) 
   },height = 700, width =900)
+  
+  output$Height <- renderPlot({
+    goalsPerGame <- data_fifa$IntGoals / data_fifa$Caps
+    height <- data_fifa$Height
+    dataframe <- data.frame(goalsPerGame,height)
+    ggplot(dataframe, aes(goalsPerGame,height,colour = data_fifa$Country))+geom_point(shape=1) 
+  },height = 700, width =900)
 })
