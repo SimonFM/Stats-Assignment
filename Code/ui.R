@@ -1,12 +1,14 @@
+# This file runs the shiny R User Interface
+
 shinyUI(fluidPage(
-    # Show a plot of the generated distribution
+    # The tabPanels control the tabs, plotOutput draws the plots
+    # from the function.
     mainPanel(
       tabsetPanel(
-        tabPanel("Goals vs Caps", plotOutput("distPlot")),
+        tabPanel("Goals against Caps", plotOutput("goalsAgainstCaps")),
         tabPanel("Occurances of Teams",plotOutput("teamOccurances")),
-        tabPanel("Goals Per Game / Caps",plotOutput("Perfomance"))
-#         tabPanel("Most Popular Teams", plotOutput("MostClub"))
-      )
+        tabPanel("Goals Per Game against Caps",plotOutput("Perfomance"))
+        )
     )
   )
 )
