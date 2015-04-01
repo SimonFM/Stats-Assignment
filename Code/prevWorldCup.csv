@@ -189,8 +189,7 @@ Year,Team,ISO,for,against,Penalties,Matches,Shots,wide,freekicks,Offside,Corners
 1982,Czechoslovakia,CS,2,3,2,3,2,0,0,0,0,0,2,1
 1982,Kuwait ,KW,2,6,0,3,2,0,0,0,0,0,1,2
 1982,Peru,PE,2,6,0,3,2,0,0,0,0,0,2,1
-"1982,New Zealand,""NZ"
-",2,12,0,3,2,0,0,0,0,0,0,3
+1982,New Zealand,NZ,2,12,0,3,2,0,0,0,0,0,0,3
 1982,Cameroon,CM,1,1,0,3,1,0,0,0,0,0,3,0
 1982,El Salvador,SV,1,13,0,3,1,0,0,0,0,0,0,3
 1986,Argentina,AR,14,5,0,7,14,0,0,0,0,6,1,0
@@ -216,8 +215,7 @@ Year,Team,ISO,for,against,Penalties,Matches,Shots,wide,freekicks,Offside,Corners
 1986,Iraq,IQ,1,4,0,3,1,0,0,0,0,0,0,3
 1986,Algeria,DZ,1,5,0,3,1,0,0,0,0,0,1,2
 1986,Poland,PL,1,7,0,4,1,0,0,0,0,1,1,2
-1986,Canada ,""CA
-"",0,5,0,3,0,0,0,0,0,0,0,3
+1986,Canada ,CA,0,5,0,3,0,0,0,0,0,0,0,3
 1990,GermanyFR,DE,15,5,2,7,19,0,0,0,0,5,2,0
 1990,Italy,IT,10,2,1,7,15,0,0,0,0,6,1,0
 1990,Czechoslovakia,CS,10,5,2,5,10,0,0,0,0,3,0,2
@@ -231,8 +229,7 @@ Year,Team,ISO,for,against,Penalties,Matches,Shots,wide,freekicks,Offside,Corners
 1990,Romania,RO,4,3,1,4,9,0,0,0,0,1,2,1
 1990,Soviet Union,SU,4,4,0,3,4,0,0,0,0,1,0,2
 1990,Colombia,CO,4,4,0,4,4,0,0,0,0,1,1,2
-1990,Costa Rica,""CR
-"",4,6,0,4,4,0,0,0,0,2,0,2
+1990,Costa Rica,CR,4,6,0,4,4,0,0,0,0,2,0,2
 1990,Netherlands,NL,3,4,1,4,3,0,0,0,0,0,3,1
 1990,Sweden,SE,3,6,0,3,3,0,0,0,0,0,0,3
 1990,Austria,AT,2,3,0,3,2,0,0,0,0,1,0,2
