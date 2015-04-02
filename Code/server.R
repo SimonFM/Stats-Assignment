@@ -43,4 +43,18 @@ shinyServer(function(input, output) {
     dataframe <- data.frame(goalsPerGame,height)
     ggplot(dataframe, aes(goalsPerGame,height,colour = data_fifa$Country))+geom_point(shape=1) 
   },height = 700, width =900)
+  
+  # This function outputs the data for the accuracy of every team in the 2002 & 
+  # 2006 competitions.
+  output$Accuracy <- renderPlot({
+    subset = subset(data_prev, data_prev$Year=="2002"|data_prev$Year=="2006")
+    #Shots on target + Shots off target (i.e wide)
+    subset$totalShots <- subset$Shots + subset$wide
+    #Accuracy = Shots on Target / Total Shots 
+    subset$Accuracy <- subset$Shots / subset$totalShots
+    #Make the percentages look nice
+    subset$Accuracy <- subset$Accuracy * 100
+    anotherSubset = subset(subset, select=c("Year", "Team", "Accuracy"))
+    ggplot(anotherSubset, aes(Team,Accuracy, colour=Team))+geom_point(show_guide=FALSE)+theme(axis.text.x = element_text(angle = 90))
+  },height = 700, width =900)
 })
