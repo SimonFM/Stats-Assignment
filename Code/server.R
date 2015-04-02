@@ -34,7 +34,9 @@ shinyServer(function(input, output) {
     dataframe <- data.frame(goalsPerGame,caps)
     ggplot(dataframe, aes(goalsPerGame,caps),colour=cond)+geom_point(shape=1)+geom_smooth(method=lm) 
   },height = 700, width =900)
-  
+
+  # This function outputs the data for the correlation between average goals per game
+  # and the players height  
   output$Height <- renderPlot({
     goalsPerGame <- data_fifa$IntGoals / data_fifa$Caps
     height <- data_fifa$Height
